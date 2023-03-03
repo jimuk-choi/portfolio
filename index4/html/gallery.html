@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMC</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <!-- scrolltrigger -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scrolla.jquery.min.js"></script>
+    <script src="js/gallery.js"></script>
+    <!-- scrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    
+</head>
+
+
+<body>
+    <span class="fuck"></span>
+    <span class="scrollDown en">Scroll down .</span>
+
+    <div class="wrap">
+        <header>
+            <div class="innerHeader">
+                
+                <div class="home">
+                    <a href="gallery.html">
+                        <p class="en">JMC</p>
+                    </a>
+                </div>
+
+                <!-- menuOpen -->
+                <div class="menu">
+                    <a href="#" class="open">
+                        <span class="line_1"></span>
+                        <span class="line_2"></span>
+                    </a>
+                    <div class="menuOpen">
+                        <div class="menuWrap">
+                            <a href="#" class="close en">close</a>
+
+                            <nav class="menu2 en">
+		
+                                <a class="menu__item" href="index.html">
+                                    <div class="menu__item-image_wrapper">
+                                        <div class="menu__item-image_inner">
+                                            <img class="menu__item-image" src="img/menu_1.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <span class="menu__item-text"><span class="menu__item-innertext en">Home</span></span>
+                                </a>
+                        
+                                <a class="menu__item" href="about.html">
+                                    <div class="menu__item-image_wrapper">
+                                        <div class="menu__item-image_inner">
+                                            <img class="menu__item-image" src="img/menu_2.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <span class="menu__item-text"><span class="menu__item-innertext en">About</span></span>
+                                </a>
+                        
+                                <a class="menu__item" href="gallery.html">
+                                    <div class="menu__item-image_wrapper">
+                                        <div class="menu__item-image_inner">
+                                            <img class="menu__item-image" src="img/menu_3.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <span class="menu__item-text"><span class="menu__item-innertext en">Gallery</span></span>
+                                </a>
+                        
+                                <a class="menu__item" href="process.html">
+                                    <div class="menu__item-image_wrapper">
+                                        <div class="menu__item-image_inner">
+                                            <img class="menu__item-image" src="img/menu_4.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <span class="menu__item-text"><span class="menu__item-innertext en">Process</span></span>
+                                </a>
+                        
+                            </nav>
+
+                            <ul class="contact_2">
+                                <li>
+                                    <a href="tel:01084406462">
+                                        <p class="txt en">/ TEL <span>+82 010-8440-6462</span></p>
+                                        <div class="btn">
+                                            <p class="circle_1"><img src="img/circle_icon fff.png" alt=""></p>
+                                            <p class="circle_2"><img src="img/circle_icon fff.png" alt=""></p>
+                                            <p class="arrow"><img src="img/arrow_right_icon fff.png" alt=""></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="sms:01084406462">
+                                        <p class="txt en">/ SMS <span>+82 010-8440-6462</span></p>
+                                        <div class="btn">
+                                            <p class="circle_1"><img src="img/circle_icon fff.png" alt=""></p>
+                                            <p class="circle_2"><img src="img/circle_icon fff.png" alt=""></p>
+                                            <p class="arrow"><img src="img/arrow_right_icon fff.png" alt=""></p>
+                                        </div>
+                                        
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:jimook950@gmail.com" title="mail me!">
+                                        <p class="txt en">/ E-mail <span>jimook950@gmail.com</span></p>
+                                        <div class="btn">
+                                            <p class="circle_1"><img src="img/circle_icon fff.png" alt=""></p>
+                                            <p class="circle_2"><img src="img/circle_icon fff.png" alt=""></p>
+                                            <p class="arrow"><img src="img/arrow_right_icon fff.png" alt=""></p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <section class="visual">
+            <div class="inner">
+                <p class="img"><img src="img/index_smoke_1.png" alt=""></p>
+                <div class="text en">
+                    <h1>Make everything<br>you imagine come true.</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="visual_2">
+            <div class="img">
+                <div class="bg">
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="inner">
+                <h2 class="common en">/ GALLERY</h2>
+
+                <ul class="box box_1">
+                    <li>
+                        <a href="gallery/genesis/html/index.html" target="_blank">
+                            <div class="imgBox">
+                                <span id="cover"></span>
+                                <p class="img">
+                                    <img src="img/index_galley_genesis.png" alt="">
+                                    <span><img src="img/index_galley_gensis_logo.png" alt=""></span>
+                                </p>
+                            </div>
+                            <div class="txtBox">
+                                <h3 class="tit en">/ GENESIS</h3>
+                                <p class="txt_1">GENESIS 공식 사이트를 클론 코딩하여 만든<br>반응형 웹 사이트입니다.</p>
+                                <p class="txt_2 en">/ HTML CSS jQuery Swiper Scrolla</p>
+                                <div href="#" class="btn">
+                                    <p class="txt en">/ Go Site</p>
+                                    <p class="circle_1"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="circle_2"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="arrow"><img src="img/arrow_right_icon.png" alt=""></p>
+                                </div>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery/younglim/html/index.html" target="_blank">
+                            <div class="imgBox">
+                                <span id="cover"></span>
+                                <p class="img">
+                                    <img src="img/index_galley_younglim.png" alt="">
+                                    <span><img src="img/index_galley_younglim_logo.png" alt=""></span>
+                                </p>
+                            </div>
+                            <div class="txtBox">
+                                <h3 class="tit en">/ YOUNGLIM</h3>
+                                <p class="txt_1">YOUNGLIM 공식 사이트를 클론 코딩하여 만든<br>반응형 웹 사이트입니다.</p>
+                                <p class="txt_2 en">/ HTML CSS jQuery Swiper Scrolla</p>
+                                <div href="#" class="btn">
+                                    <p class="txt en">/ Go Site</p>
+                                    <p class="circle_1"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="circle_2"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="arrow"><img src="img/arrow_right_icon.png" alt=""></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="box box_2">
+                    <li>
+                        <a href="gallery/musign/html/index.html" target="_blank">
+                            <div class="imgBox">
+                                <span id="cover"></span>
+                                <p class="img">
+                                    <img src="img/index_galley_musign.png" alt="">
+                                    <span><img src="img/index_galley_musign_logo.png" alt=""></span>
+                                </p>
+                            </div>
+                            <div class="txtBox">
+                                <h3 class="tit en">/ MUSIGN</h3>
+                                <p class="txt_1">뮤자인 공식 사이트를 클론 코딩하여 만든<br>반응형 웹 사이트입니다.</p>
+                                <p class="txt_2 en">/ HTML CSS jQuery Slick Scrolla</p>
+                                <div href="#" class="btn">
+                                    <p class="txt en">/ Go Site</p>
+                                    <p class="circle_1"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="circle_2"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="arrow"><img src="img/arrow_right_icon.png" alt=""></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery/phomein/html/index.html" target="_blank">
+                            <div class="imgBox">
+                                <span id="cover"></span>
+                                <p class="img">
+                                    <img src="img/index_galley_phomain.png" alt="">
+                                    <span><img src="img/index_galley_phomain_logo.png" alt=""></span>
+                                </p>
+                            </div>
+                            <div class="txtBox">
+                                <h3 class="tit en">/ PHOMAIN</h3>
+                                <p class="txt_1">포메인 공식 사이트를 클론 코딩하여 만든<br>반응형 웹 사이트입니다.</p>
+                                <p class="txt_2 en">/ HTML CSS jQuery Swiper Scrolla</p>
+                                <div href="#" class="btn">
+                                    <p class="txt en">/ Go Site</p>
+                                    <p class="circle_1"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="circle_2"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="arrow"><img src="img/arrow_right_icon.png" alt=""></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="box box_3">
+                    <li>
+                        <a href="gallery/dopda/html/index.html" target="_blank">
+                            <div class="imgBox">
+                                <span id="cover"></span>
+                                <p class="img">
+                                    <img src="img/index_galley_dopda.png" alt="">
+                                    <span><img src="img/index_galley_dopda_logo.png" alt=""></span>
+                                </p>
+                            </div>
+                            <div class="txtBox">
+                                <h3 class="tit en">/ DOPDA</h3>
+                                <p class="txt_1">돕다 공식 사이트를 클론 코딩하여 만든<br>반응형 웹 사이트입니다.</p>
+                                <p class="txt_2 en">/ HTML CSS Slick Scrolla</p>
+                                <div href="#" class="btn">
+                                    <p class="txt en">/ Go Site</p>
+                                    <p class="circle_1"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="circle_2"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="arrow"><img src="img/arrow_right_icon.png" alt=""></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery/daebang/html/ex.html" target="_blank">
+                            <div class="imgBox">
+                                <span id="cover"></span>
+                                <p class="img">
+                                    <img src="img/index_galley_daebang.png" alt="">
+                                    <span><img src="img/index_galley_daebang_logo.png" alt=""></span>
+                                </p>
+                            </div>
+                            <div class="txtBox">
+                                <h3 class="tit en">/ DAEBANG</h3>
+                                <p class="txt_1">대방건설 공식 사이트를 클론 코딩하여 만든<br>반응형 웹 사이트입니다.</p>
+                                <p class="txt_2 en">/ HTML CSS jQuery Slick Scrolla</p>
+                                <div href="#" class="btn">
+                                    <p class="txt en">/ Go Site</p>
+                                    <p class="circle_1"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="circle_2"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="arrow"><img src="img/arrow_right_icon.png" alt=""></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="box box_4">
+                    <li>
+                        <a href="gallery/hanhwa/html/index.html" target="_blank">
+                            <div class="imgBox">
+                                <span id="cover"></span>
+                                <p class="img">
+                                    <img src="img/index_galley_hanwha.png" alt="">
+                                    <span><img src="img/index_galley_hanwha_logo.png" alt=""></span>
+                                </p>
+                            </div>
+                            <div class="txtBox">
+                                <h3 class="tit en">/ HANHWA</h3>
+                                <p class="txt_1">한화케미칼 공식 사이트를 클론 코딩하여 만든<br>반응형 웹 사이트입니다.</p>
+                                <p class="txt_2 en">/ HTML CSS Slick Scrolla</p>
+                                <div href="#" class="btn">
+                                    <p class="txt en">/ Go Site</p>
+                                    <p class="circle_1"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="circle_2"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="arrow"><img src="img/arrow_right_icon.png" alt=""></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery/ystudio/html/index.html" target="_blank">
+                            <div class="imgBox">
+                                <span id="cover"></span>
+                                <p class="img">
+                                    <img src="img/index_galley_ystudio.png" alt="">
+                                    <span><img src="img/index_galley_ystudio_logo.png" alt=""></span>
+                                </p>
+                            </div>
+                            <div class="txtBox">
+                                <h3 class="tit en">/ YSTUDIO</h3>
+                                <p class="txt_1">와이스튜디오 공식 사이트를 클론 코딩하여 만든<br>반응형 웹 사이트입니다.</p>
+                                <p class="txt_2 en">/ HTML CSS Slick Scrolla</p>
+                                <div href="#" class="btn">
+                                    <p class="txt en">/ Go Site</p>
+                                    <p class="circle_1"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="circle_2"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="arrow"><img src="img/arrow_right_icon.png" alt=""></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="box box_5">
+                    <li>
+                        <a href="gallery/kca/html/index.html" target="_blank">
+                            <div class="imgBox">
+                                <span id="cover"></span>
+                                <p class="img">
+                                    <img src="img/index_galley_kca.png" alt="">
+                                    <span><img src="img/index_galley_kca_logo.png" alt=""></span>
+                                </p>
+                            </div>
+                            <div class="txtBox">
+                                <h3 class="tit en">/ KCA</h3>
+                                <p class="txt_1">한국소비자원 공식 사이트를 클론 코딩하여 만든<br>반응형 웹 사이트입니다.</p>
+                                <p class="txt_2 en">/ HTML CSS Scrolla</p>
+                                <div href="#" class="btn">
+                                    <p class="txt en">/ Go Site</p>
+                                    <p class="circle_1"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="circle_2"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="arrow"><img src="img/arrow_right_icon.png" alt=""></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery/crewala/html/index.html" target="_blank">
+                            <div class="imgBox">
+                                <span id="cover"></span>
+                                <p class="img">
+                                    <img src="img/index_galley_crew a la.png" alt="">
+                                    <span><img src="img/index_galley_crew a la_logo.png" alt=""></span>
+                                </p>
+                            </div>
+                            <div class="txtBox">
+                                <h3 class="tit en">/ CREW A LA</h3>
+                                <p class="txt_1">crew a la 사이트를 클론 코딩하여 만든<br>반응형 웹 사이트입니다.</p>
+                                <p class="txt_2 en">/ HTML CSS Scrolla</p>
+                                <div href="#" class="btn">
+                                    <p class="txt en">/ Go Site</p>
+                                    <p class="circle_1"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="circle_2"><img src="img/circle_icon.png" alt=""></p>
+                                    <p class="arrow"><img src="img/arrow_right_icon.png" alt=""></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="ncs">
+            <div class="inner">
+                <h2 class="common en">/ NCS</h2>
+                
+                <div class="ncsList ncs_top">
+                    <a href="#" class="ncs_01">
+                        <ul>
+                            <li class="num en"><p>01.</p></li>
+                            <li class="txtBox_1">
+                                <p class="txt_1">/ WEB UI 구현 및 테스트</p>
+                                <p class="txt_2"><span class="en">UI</span> 구현</p>
+                            </li>
+                            <li class="line"><span></span></li>
+                            <li class="txtBox_2">
+                                <p class="txt_1">모바일 웹 UIUX 디자인 & 프론트엔드(React.js)B</p>
+                                <p class="txt_2">평가일시 : 2022년 11월 28일(월)</p>
+                                <p class="txt_3">평가방법 : 포트폴리오 / 문제해결 시나리오</p>
+                                <p class="txt_4">훈 련 생 : 최 지 묵</p>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="ncsList">
+                    <a href="#" class="ncs_02">
+                        <ul>
+                            <li class="num en"><p>02.</p></li>
+                            <li class="txtBox_1">
+                                <p class="txt_1">/ WEB UI 구현 및 테스트</p>
+                                <p class="txt_2"><span class="en">UI TEST</span></p>
+                            </li>
+                            <li class="line"><span></span></li>
+                            <li class="txtBox_2">
+                                <p class="txt_1">모바일 웹 UIUX 디자인 & 프론트엔드(React.js)B</p>
+                                <p class="txt_2">평가일시 : 2022년 11월 28일(월)</p>
+                                <p class="txt_3">평가방법 : 서술형시험, 평가자체크리스트</p>
+                                <p class="txt_4">훈 련 생 : 최 지 묵</p>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="ncsList">
+                    <a href="#" class="ncs_03">
+                        <ul>
+                            <li class="num en"><p>03.</p></li>
+                            <li class="txtBox_1">
+                                <p class="txt_1">/ WEB 프로그래밍 기초</p>
+                                <p class="txt_2">개발자 환경 구축</p>
+                            </li>
+                            <li class="line"><span></span></li>
+                            <li class="txtBox_2">
+                                <p class="txt_1">모바일 웹 UIUX 디자인 & 프론트엔드(React.js)B</p>
+                                <p class="txt_2">평가일시 : 2022년 12월 12일(월)</p>
+                                <p class="txt_3">평가방법 : 문제해결 시나리오, 서술형 시험</p>
+                                <p class="txt_4">훈 련 생 : 최 지 묵</p>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="ncsList">
+                    <a href="#" class="ncs_04">
+                        <ul>
+                            <li class="num en"><p>04.</p></li>
+                            <li class="txtBox_1">
+                                <p class="txt_1">/ WEB 프로그래밍 기초</p>
+                                <p class="txt_2">프로그래밍 언어 활용</p>
+                            </li>
+                            <li class="line"><span></span></li>
+                            <li class="txtBox_2">
+                                <p class="txt_1">모바일 웹 UIUX 디자인 & 프론트엔드(React.js)B</p>
+                                <p class="txt_2">평가일시 : 2022년 12월 12일(월)</p>
+                                <p class="txt_3">평가방법 : 문제해결 시나리오, 서술형 시험</p>
+                                <p class="txt_4">훈 련 생 : 최 지 묵</p>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="ncsList">
+                    <a href="#" class="ncs_05">
+                        <ul>
+                            <li class="num en"><p>05.</p></li>
+                            <li class="txtBox_1">
+                                <p class="txt_1">/ WEB UIUX 기획, 설계</p>
+                                <p class="txt_2"><span class="en">UI/UX</span> 요구분석</p>
+                            </li>
+                            <li class="line"><span></span></li>
+                            <li class="txtBox_2">
+                                <p class="txt_1">모바일 웹 UIUX 디자인 & 프론트엔드(React.js)B</p>
+                                <p class="txt_2">평가일시 : 2023년 01월 02일(월)</p>
+                                <p class="txt_3">평가방법 : 포트폴리오, 서술형 시험</p>
+                                <p class="txt_4">훈 련 생 : 최 지 묵</p>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="ncsList">
+                    <a href="#" class="ncs_06">
+                        <ul>
+                            <li class="num en"><p>06.</p></li>
+                            <li class="txtBox_1">
+                                <p class="txt_1">/ WEB UIUX 기획, 설계</p>
+                                <p class="txt_2"><span class="en">UI/UX</span> 콘셉트 기획</p>
+                            </li>
+                            <li class="line"><span></span></li>
+                            <li class="txtBox_2">
+                                <p class="txt_1">모바일 웹 UIUX 디자인 & 프론트엔드(React.js)B</p>
+                                <p class="txt_2">평가일시 : 2023년 01월 02일(월)</p>
+                                <p class="txt_3">평가방법 : 문제해결 시나리오, 평가지질문</p>
+                                <p class="txt_4">훈 련 생 : 최 지 묵</p>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="ncsList">
+                    <a href="#" class="ncs_07">
+                        <ul>
+                            <li class="num en"><p>07.</p></li>
+                            <li class="txtBox_1">
+                                <p class="txt_1">/ WEB UIUX 기획, 설계</p>
+                                <p class="txt_2"><span class="en">UI</span> 아키텍처 설계</p>
+                            </li>
+                            <li class="line"><span></span></li>
+                            <li class="txtBox_2">
+                                <p class="txt_1">모바일 웹 UIUX 디자인 & 프론트엔드(React.js)B</p>
+                                <p class="txt_2">평가일시 : 2023년 01월 02일(월)</p>
+                                <p class="txt_3">평가방법 : 서술형시험, 평가자체크리스트</p>
+                                <p class="txt_4">훈 련 생 : 최 지 묵</p>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="ncsList">
+                    <a href="#" class="ncs_08">
+                        <ul>
+                            <li class="num en"><p>08.</p></li>
+                            <li class="txtBox_1">
+                                <p class="txt_1">/ WEB TEST 및 배포</p>
+                                <p class="txt_2">어플리케이션 테스트 수행</p>
+                            </li>
+                            <li class="line"><span></span></li>
+                            <li class="txtBox_2">
+                                <p class="txt_1">모바일 웹 UIUX 디자인 & 프론트엔드(React.js)B</p>
+                                <p class="txt_2">평가일시 : 2023년 01월 19일(목)</p>
+                                <p class="txt_3">평가방법 : 문제해결 시나리오, 서술형시험</p>
+                                <p class="txt_4">훈 련 생 : 최 지 묵</p>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="ncsList">
+                    <a href="#" class="ncs_09">
+                        <ul>
+                            <li class="num en"><p>09.</p></li>
+                            <li class="txtBox_1">
+                                <p class="txt_1">/ WEB TEST 및 배포</p>
+                                <p class="txt_2">어플리케이션 배포</p>
+                            </li>
+                            <li class="line"><span></span></li>
+                            <li class="txtBox_2">
+                                <p class="txt_1">모바일 웹 UIUX 디자인 & 프론트엔드(React.js)B</p>
+                                <p class="txt_2">평가일시 : 2023년 01월 19일(목)</p>
+                                <p class="txt_3">평가방법 : 문제해결 시나리오, 서술형시험</p>
+                                <p class="txt_4">훈 련 생 : 최 지 묵</p>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+        </section>
+
+        <section class="contact">
+            <div class="inner en">
+                <p class="let"><a href="#">Let's Talk.</a></p>
+
+                <div>
+                    <a href="tel:01084406462">
+                        <p class="tit tel" >/ TEL.</p>
+                        <p class="txt">+82 010 8440 6462</p>
+                        <div href="#" class="btn">
+                            <p class="circle_1"><img src="img/circle_icon.png" alt=""></p>
+                            <p class="circle_2"><img src="img/circle_icon.png" alt=""></p>
+                            <p class="arrow"><img src="img/arrow_right_icon.png" alt=""></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="sms:01084406462">
+                        <p class="tit tel">/ SMS</p>
+                        <p class="txt">+82 010 8440 6462</p>
+                        <div href="#" class="btn">
+
+                            <p class="circle_1"><img src="img/circle_icon.png" alt=""></p>
+                            <p class="circle_2"><img src="img/circle_icon.png" alt=""></p>
+                            <p class="arrow"><img src="img/arrow_right_icon.png" alt=""></p>
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="mailto:jimook950@gmail.com">
+                        <p class="tit">/ E-mail.</p>
+                        <p class="txt">jimook950@gmail.com</p>
+                        <div href="#" class="btn">
+
+                            <p class="circle_1"><img src="img/circle_icon.png" alt=""></p>
+                            <p class="circle_2"><img src="img/circle_icon.png" alt=""></p>
+                            <p class="arrow"><img src="img/arrow_right_icon.png" alt=""></p>
+                        </div>
+                    </a>
+                </div>
+
+                
+
+            </div>
+        </section>
+</body>
+</html>
