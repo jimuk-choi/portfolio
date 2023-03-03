@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+/* layout */
+
+body{font-family: 'Nanum Gothic', sans-serif; font-size: 16px; color: #333; line-height: 1.25;}
+.wrap{width: 100%; overflow: hidden;}
+header{width: 100%;height: 90px;}/* header, footer는 높으를 줘도 상관없음 */
+.innerHeader{width: 90%; margin: 0 auto; position: relative; line-height: 90px;}
+.innerHeader .logo{position: absolute; left: 50%; top: 27%; transform: translateX(-50%);}
+.innerHeader .logo a{display: block; width: 100%; height: 100%;}
+.innerHeader .icon{float: left; width: 218px;}
+.innerHeader .icon li{float: left; width: 25%;}
+.innerHeader .icon li a{display: block; width: 100%; height: 100%;}
+.innerHeader .right{float: right; width: 240px;}
+.innerHeader .right li{float: left; width: 49%; text-align: center; line-height: 2.5; 
+    margin-right: 2%; margin-top: 26px; border: 1px solid#ddd; box-sizing: border-box; border-radius: 50px;}
+.innerHeader .right li:nth-child(2){margin-right: 0;}
+.innerHeader .right li a{display: block; width: 100%; height: 100%;}
+
+
+
+.visual{width: 100%; height: 85vh; position: relative;}
+.visual img{width: 100%;}
+.visual .inner{width: 1280px; position: absolute; left: 50%; top: 50%; 
+    transform: translate(-50%,-50%);}
+.visual .inner .leftBox{float: left; }
+.visual .inner .leftBox h2{font-size: 50px; margin-bottom: 50px;}
+.visual .inner .leftBox p{font-size: 22px; margin-bottom: 50px; line-height: 1.6;}
+.visual .inner .leftBox .btn{display: inline-block; color: #fff; padding: 20px 40px; border: 1px solid#333; border-radius: 50px;}
+
+
+.visual .inner .rightBox{float: right; width: 200px;}
+.visual .inner .rightBox .may{display: block; width: 145px; height: 145px; 
+    border-radius: 50%; text-align: center; margin: 0 auto 30px;}
+.visual .inner .rightBox .may .tit{font-size: 55px; font-style: italic; font-weight: bold; margin-bottom: 10px;}
+.visual .inner .rightBox .may .txt{color: #fff; font-weight: 500;}
+
+.visual .inner .rightBox ul{width: 100%; margin-bottom: 20px;}
+.visual .inner .rightBox ul li{width: 100%; letter-spacing: 5px;}
+.visual .inner .rightBox ul li a{font-size: 12px; line-height: 50px; display: block; width: 100%; height: 100%;
+    font-weight: 600; border-bottom: 1px solid#333;}
+.visual .inner .rightBox .day{font-size: 54px; font-weight: bold;}
+
+/* section visual animaition */
+
+@keyframes slideBox_ani {
+    0% {opacity: 0; transform: translateY(30px);}
+    30% {opacity: 0; transform: translateY(30px);}
+    100% {opacity: 1; transform: translateY(0px);}
+}
+.visual .inner .leftBox{animation-name: slideBox_ani; animation-duration: 2s;}
+.visual .inner .leftBox p{animation-name: slideBox_ani; animation-duration: 2.8s;}
+.visual .inner .leftBox .bnt{animation-name: slideBox_ani; animation-duration: 3.2s;}
+
+
+@keyframes may_ani {
+    0%{opacity: 0; transform: scale(0);}
+    30%{opacity: 0; transform: scale(0);}
+    80%{opacity: 1; transform: scale(1.1);}
+}
+.visual .inner .rightBox .may{animation-duration: 1s; animation-name: may_ani;}
+
+
+@keyframes li_ani{
+    0%{opacity: 0; letter-spacing: -5px;}
+    30%{opacity: 0; letter-spacing: -5px;}
+}
+.visual .inner .rightBox ul li{animation-duration: 0.8s; animation-name: li_ani;}
+.visual .inner .rightBox ul li:nth-child(2){animation-duration: 0.8s; animation-name: li_ani;}
+.visual .inner .rightBox ul li:nth-child(3){animation-duration: 0.8s; animation-name: li_ani;}
+
+
+
+
+/* section happy */
+.happy{width: 100%;}
+.happy .inner{width: 1400px; margin: 0 auto;}
+.happy .inner h2{font-size: 40px; text-align: center; margin-bottom: 50px;}
+.happy .inner h2 span{color: #f57260;}
+.happy .inner ul{width: 100%; display: flex; justify-content: space-between;}
+
+.happy .inner ul li{background-color: #c5cdbe; width: 32.2%;}
+.happy .inner ul li:nth-child(2){background-color: #e89b90;}
+.happy .inner ul li:nth-child(3){background-color: #dfcfc0;}
+.happy .inner ul li a{display: block; width: 100%; height: 100%;
+    padding: 50px 0 50px 30px; box-sizing: border-box; position: relative;}
+
+.happy .inner ul li a:after{content: ''; position: absolute; right: 0; top: 60px;
+width: 63%; height: 2px; background-color: rgba(237,237,237,0.42);}
+.happy .inner ul li:nth-child(2) a:after{width: 60%;}
+.happy .inner ul li:nth-child(3) a:after{width: 43%;}
+
+.happy .inner ul li a p{font-size: 19px; margin-bottom: 30px;}
+.happy .inner ul li a h3{font-size: 26px; margin-bottom: 70px;}
+.happy .inner ul li a p.img{width: 380px; float: right; overflow: hidden;}
+.happy .inner ul li a p.img img{width: 100%; transition: all 0.5s}
+.happy .inner ul li a:hover p.img img{transform: scale(1.2); transition: all 0.5s;}
+
+@keyframes down_ani{
+    0%{opacity: 0; transform: translateY(30px);}
+    50%{opacity: 0; transform: translateY(-30px);}
+}
+.happy .inner ul li{animation-name: down_ani; animation-duration: 1.5s;}
+.happy .inner ul li:nth-child(2){animation-name: down_ani; animation-duration: 1.7s;}
+.happy .inner ul li:nth-child(3){animation-name: down_ani; animation-duration: 1.9s;}
+
+
+
+/* smart */
+.smart{width: 100%; background: url(../img/section.jpg); background-repeat: no-repeat;
+    background-position: center; background-size: cover; padding: 80px 0;}
+.smart .inner{width: 1400px; margin: 0 auto; overflow: hidden;}
+.smart .inner h2{font-size: 40px; text-align: center; margin-bottom: 60px;}
+.smart .inner h2 span{color: #425ca6;}
+
+.smart .inner .left{float: left; width: 30%; color: #fff;}
+.smart .inner .left li{width: 100%;}
+.smart .inner .left li:nth-child(1){margin-bottom: 6px;}
+.smart .inner .left li a{display: block; width: 100%; height: 100%; position: relative;}
+.smart .inner .left li a::before{content: '상품테스트'; position: absolute; 
+    bottom: 40px; left: 40px; font-weight: bold; font-size: 16px; padding-bottom: 20px;
+    border-bottom: 3px solid#fff;}
+
+.smart .inner .left li a p.img{width: 100%;}
+.smart .inner .left li a p.img img{width: 100%;}
+.smart .inner .left li a h3{position: absolute; right: 10%; bottom: 22.2%;}
+
+.smart .inner .right{float: right; width: 70%; text-align: center;}
+.smart .inner .right li{float: left; width: 50%; height: 398px; padding: 20px 0;
+    background-color: #fff;}
+.smart .inner .right li a{display: block; width: 100%; height: 100%;}
+.smart .inner .right li > p{width: 30%; margin: 20px auto; 
+    border-top: 1px solid#ddd; border-bottom: 1px solid#ddd;}
+.smart .inner .right li a p.img{width: 200px; height: 200px; border-radius: 50%; margin: 0 auto; overflow: hidden;
+    margin-bottom: 30px;}
+.smart .inner .right li a p.img img{width: 100%; transition: all 0.5s;}
+.smart .inner .right li a:hover p.img img{transform: scale(1.2); transition: all 0.5s;}
+
+@keyframes slideBox1_ani{
+    0% {opacity: 0; transform: translateX(0px);}
+    40% {opacity: 0; transform: translateX(-50px);}
+}
+.smart .inner .left li{animation-name: slideBox1_ani; animation-duration: 1.7s;}
+.smart .inner .left li:nth-child(2){animation-name: slideBox1_ani; animation-duration: 1.6s;}
+
+@keyframes slideBox2_ani{
+    0% {opacity: 0; transform: translateX(0px);}
+    40% {opacity: 0; transform: translateX(50px);}
+}
+.smart .inner .right li {animation-name: slideBox2_ani; animation-duration: 1s;}
+.smart .inner .right li:nth-child(2) {animation-name: slideBox2_ani; animation-duration: 1s;}
+
+/* section news */
+.news{width: 100%;}
+.news .inner{width: 1400px; margin: 50px auto; }
+.news .inner .issue{width: 100%; display: flex; 
+    justify-content: space-between;}
+.news .inner .issue li{width: 49.25%; 
+    background: url(../img/img_08.jpg)no-repeat center/cover; height: 280px;
+    padding: 80px 0 0 50px; box-sizing: border-box;}
+.news .inner .issue li h3{font-size: 28px; margin-bottom: 20px; }
+.news .inner .issue li p{margin-bottom: 10px;}
+.news .inner .issue li p .num{background-color: #7f8c97; display: inline-block;
+    font-size: 14px; padding: 3px 7px; border-radius: 50%; margin-right: 8px;}
+.news .inner .issue li .txt{line-height: 1.8;}
+.news .inner .issue li:last-child{background: url(../img/img_09.jpg)no-repeat center/cover;}
+
+@keyframes news_Box{
+    0%{opacity: ; transform: translateY(-80px);}
+    40%{opacity: ; transform: translateY(0px);}
+}
+.news .inner .issue li{animation-name: news_Box; animation-duration: 2s;}
+.news .inner .issue li:nth-child(2){animation-name: news_Box; animation-duration: 2.8s;}
+
+
+/* top */
+.top{float: right; display: inline-block; margin-right: 30px; width: 80px; height: 80px;
+    border-radius: 50%; background-color: #454545; position: relative;
+    background-image: url(../img/arrow.JPG); background-repeat: no-repeat;
+    background-position: center; background-size: 25px; background-position-y: 7px;
+    margin-bottom: 20px;}
+.top p{position: absolute; left: 50%; top: 50%; color: #fff;
+    transform: translate(-50%,-50%);}
+
+
+/* footer */
+footer{width: 100%; background-color: #454545; color: #adadad; padding: 60px 0; clear: both;}
+footer .adress{width: 1400px; margin: 0 auto;}
+footer .adress p{float: left; width: 70%; 
+footer .adress .flogo{float: right; width: 30%; display: inline-block;
+margin-top: 20px;}

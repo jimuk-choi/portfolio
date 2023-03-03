@@ -1,0 +1,914 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* reset */
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+a:focus {outline: none}
+button:focus {outline: none}
+
+
+
+body{font-size: 16px; font-weight: 300; font-family: 'Hyundai Sans Head Office';}
+.wrap{width: 100%; overflow: hidden;}
+
+
+
+/* header */
+header{background-color: #000; width: 100%; height: 70px; position: fixed; top: 0; left: 0;z-index: 100;}
+header .innerHeader{width: 90%; height: 100%; margin: 0 auto; overflow: hidden;}
+header .innerHeader .logo{width: 11rem; padding: 17px 0; float: left; margin-right: 20px;}
+header .innerHeader .logo a{width: 100%; display: block;}
+header .innerHeader .logo a img{scale: 0.75;}
+
+header .innerHeader nav .nav_1{width: 29rem; height: 100%; float: left;}
+header .innerHeader nav .nav_1 ul{display: flex; justify-content: space-around; padding: 23px 0;}
+header .innerHeader nav .nav_1 ul li{font-size: 15px; color: #bbb; font-weight: 600;}
+header .innerHeader nav .nav_1 ul li a{width: 100%; height: 100%; display: block; transition: all 0.3s;}
+header .innerHeader nav .nav_1 ul li a:hover, header .innerHeader nav .nav_1 ul li a:focus{color: #fff; transition: all 0.3s;}
+
+
+header .innerHeader nav .nav_2{width: 20rem; float: right; height: 100%;}
+header .innerHeader nav .nav_2 ul{display: flex; justify-content: space-around; padding: 23px 0; margin-right: 5%;}
+header .innerHeader nav .nav_2 ul li{font-size: 14px; color: #bbb; font-weight: 600;}
+header .innerHeader nav .nav_2 ul li a{width: 100%; height: 100%; display: block; transition: all 0.3s;}
+header .innerHeader nav .nav_2 ul li a:hover,header .innerHeader nav .nav_2 ul li a:focus{color: #fff; transition: all 0.3s;}
+header .innerHeader nav .nav_2 ul li:nth-child(3){font-size: 20px; font-weight: bold; color: #fff; position: relative;}
+header .innerHeader nav .nav_2 ul li:nth-child(3)::after{content: '|'; position: absolute; color: #fff; top: -5%; right: -120%; font-weight: 100; opacity: 0.1;}
+header .innerHeader nav .nav_2 ul li:nth-child(4){font-size: 30px; font-weight: bold; margin-left: 15px; margin-right: 30px; color: #fff; margin: -2% 0;}
+header .innerHeader nav .nav_2 ul li a{width: 100%; height: 100%; display: block; transition: all 0.3s;}
+
+
+
+/* visual */
+.visual{width: 100%; overflow: hidden; cursor: grab;}
+.visual .inner{width: 100%;}
+.visual .inner .mySwiper_visual{width: 100%;}
+.visual .inner .mySwiper_visual .swiper-wrapper{width: 100%; position: relative;}
+.visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1{position: absolute; top: 15%; left: 0; width: 100%;}
+.visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1 .txt_1{font-size: 20px; font-weight: 300; width: 60%; display: block; margin-left: 17%; margin-bottom: 0.5%; color: #fff;}
+.visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1 h2{font-size: 80px; font-weight: 300; margin-left: 17%; width: 60%; margin-bottom: 0.2%; color: #fff;}
+.visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1 .txt_2{margin-left: 17%; width: 60%; display: block; font-size: 25px; color: #fff; font-weight: 100;}
+.visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2{position: absolute; left: 0; bottom: 23%;width: 100%;}
+.visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2 li{display: inline-block; width: 10%; height: 100%; font-weight: 500; color: #fff;}
+.visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2 li:first-child{margin-left: 18%;}
+
+.visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2 li a{display: block; padding-bottom: 3%; cursor: pointer;}
+.visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2 li a .txt_1{font-size: 1rem; position: relative;}
+.visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2 li a .txt_1::after{content: ''; position: absolute; bottom: 1px; width: 0%; height: 0.5px; bottom: -2px; background-color: #fff; left: 0%; transition: all 0.4s;}
+.visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2 li a span{font-size: 0.8rem;}
+/* hover */
+.visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2 li a:hover .txt_1::after,
+.visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2 li a:focus .txt_1::after
+{width: 100%; transition: all 0.4s;}
+
+
+.visual .inner .mySwiper_visual .swiper-wrapper .line_1{width: 18%; height: 0.3%; background-color: #fff; position: absolute; bottom: 46%; left: 0%;}
+.visual .inner .mySwiper_visual .swiper-wrapper .line_2{width: 18%; height: 0.3%; background-color: #fff; position: absolute; bottom: 54%; left: 0%;}
+
+
+/* swiper */
+.visual .inner .swiper-slide img {display: block; width: 100%; height: 100vh; object-fit: cover;  position: relative;}
+.visual .inner .mySwiper_visual .swiper-button-next{display: none;}
+.visual .inner .mySwiper_visual .swiper-button-prev{display: none;}
+.visual .inner .mySwiper_visual .swiper-pagination{position: absolute; bottom: 13%; left: 0%;}
+
+.visual .inner .mySwiper_visual .swiper-pagination .swiper-pagination-bullet{border: 1px #fff; margin: 0% 0.5%; background-color:rgba(255, 255, 255, 2); scale: 1.1;}
+.visual .inner .mySwiper_visual .swiper-pagination .swiper-pagination-bullet-active{border: 2px solid#fff; background-color:rgba(255, 255, 255, 0); transform: translateY(2px);}
+
+/* animation */
+@keyframes fadeInLeft {
+    0%{opacity: 0; transform: translateX(-20%);}
+    20%{opacity: 0; transform: translateX(-20%);}
+    100%{opacity: 1; transform: translateX(0%);}
+}
+.visual .inner .mySwiper_visual .swiper-wrapper .swiper-slide.swiper-slide-active .txtBox_1{animation-name: fadeInLeft; animation-duration: 1.5s;}
+
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 1;}
+}
+.visual .inner .mySwiper_visual .swiper-wrapper .swiper-slide.swiper-slide-active .line_1,
+.visual .inner .mySwiper_visual .swiper-wrapper .swiper-slide.swiper-slide-active .line_2{
+animation-name: fadeInLeft; animation-duration: 1s;}
+
+
+
+
+
+
+
+
+/* section models */
+.models{width: 100%; overflow: hidden; background-color: #111; padding: 10% 0;}
+.models .inner{width: 85%; margin: 0 auto; position: relative; padding-bottom: 5%;}
+
+.models .inner .topBox{margin-left: 10%; margin-bottom: 2%; padding-bottom: 2%;}
+.models .inner .topBox h2{font-size: 42px; font-weight: 300; margin-bottom: 1.5%; color: #fff;}
+.models .inner .topBox p{font-size: 16px; font-weight: 500; color: #ccc; letter-spacing: -1;}
+
+.models .inner .midBox{margin-left: 10%; height: 40px; margin-bottom: 8%;}
+.models .inner .midBox .midInnerBox{width: 21%; height: 100%; margin-bottom: 10%;}
+.models .inner .midBox a{display: block; width: 100%; height: 100%; position: relative; border-bottom: 1px solid#fff;}
+.models .inner .midBox a .txt_1{float: left; position: absolute; bottom: 30%; left: 0; color: #fff; font-size: 0.95rem; font-weight: 400; margin-left: 3%;}
+.models .inner .midBox a .txt_2{float: left; position: absolute; bottom: 32%; right: 0; color: #fff; font-size: 0.8rem; font-weight: 600; margin-right: 3%;}
+
+/* swiper */
+.models .inner .mySwiper_models{margin-left: 10%; /* overflow: unset; */ overflow-x: hidden; height: 100%; position: static;}
+.models .inner .mySwiper_models .swiper-wrapper{width: 100%; }
+
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide{background-color: #151515; /* width: 458px; height: 411px;  */padding: 27px 30px 39px; overflow: hidden; box-sizing: border-box; transition: all 0.4s; width: 9%; height: 40%; position: relative;}
+
+.models .inner .mySwiper_models .swiper-pagination {position: absolute; bottom: 0%; left: 50%; transform: translate(-46%,-50%); padding: 0.5%; z-index: 10;}
+.models .inner .mySwiper_models .swiper-pagination .swiper-pagination-bullet{margin-left: 1%;border: 1px #fff; background-color:rgba(255, 255, 255, 2); scale: 1.1;}
+.models .inner .mySwiper_models .swiper-pagination .swiper-pagination-bullet-active{border: 2px solid#fff; background-color:rgba(255, 255, 255, 0); transform: translateY(2px);}
+
+
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide a{display: block; width: 100%; height: 100%;}
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox{width: 100%; margin-bottom: 10%;}
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox p{padding-bottom: 3%; color: #bbb; font-size: 1.9rem; width: 100%;}
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox p img.new{transform: scale(0.65) translateY(-15%); float: right;}
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox p span{width: 50%; display: inline-block; float: right;}
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox p span img{float: right;}
+
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox span{font-size: 0.9rem; color: #bbb; display: block; padding-bottom: 3%}
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .imgBox{width: 100%; margin-bottom: 10%;}
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .buttonBox{background-color: #000; width: 100%;;position: relative; border: 0.5px solid#fff; margin-top: 18%; transition: all 0.4s; overflow: hidden; padding: 8% 0%;}
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .buttonBox .button{width: 100%; height: 100%; position: absolute;  top: 0; left: 0;}
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .buttonBox .button::after{content: ''; position: absolute; width: 0%; height: 100%; top: 0; left: 0; background-color: #fff; transition: all 0.4s;}
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .buttonBox .button p{font-size: 1rem; color: #fff; font-weight: 500; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); letter-spacing: 0.5px; z-index: 1; transition: all 0.4s;}
+
+/* hover */
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide:hover,
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide:focus{background-color: #1a1a1a; transition: all 0.4s;}
+
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide:hover a .txtBox p,
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide:focus a .txtBox p{color:#fff;}
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide:hover a .txtBox span,
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide:focus a .txtBox span{color:#fff;}
+
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide:hover .buttonBox,
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide:focus .buttonBox{transform: translateY(-10px); transition: all 0.4s;}
+
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide .buttonBox:hover .button::after,
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide .buttonBox:focus .button::after{transition: all 0.4s; width: 100%; opacity: 1;}
+
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide .buttonBox:hover .button p,
+.models .inner .mySwiper_models .swiper-wrapper .swiper-slide .buttonBox:focus .button p{transition: all 0.4s; color: #000;}
+
+
+@keyframes fadeInRight {
+    0%{opacity: 0; transform: translateX(20%);}
+    20%{opacity: 0; transform: translateX(20%);}
+    70%{opacity: 1; transform: translateX(0%);}
+}
+
+.models .inner .mySwiper_models .swiper-wrapper.motion{animation-name: fadeInRight; animation-duration: 1.0s;}
+
+
+
+
+
+/* gif */
+.gif{background-color: #111; width: 100%; padding: 5% 0 10%;}
+.gif .inner{width: 85%; margin: 0 auto;}
+.gif .inner ul{width: 70%; margin: 0 auto; display: flex; justify-content: space-evenly; text-align: center;}
+.gif .inner ul li{width: 100%; height: 100%; margin: 0 10%;}
+.gif .inner ul li a{display: block; width: 100%; height: 100%; padding: 10px 30px;}
+.gif .inner ul li a img{margin-bottom: 20px;}
+.gif .inner ul li a p{color: #fff; font-weight: 500; width: 100%; display: block;}
+
+
+
+
+
+
+
+
+
+
+
+/* awards */
+.awards{width: 100%; background-color: #111;padding: 10% 0; overflow: hidden;}
+.awards .inner{width: 100%;}
+.awards .inner .topBox{width: 85%; margin: 0 auto;}
+.awards .inner .topBox h2{font-size: 42px; font-weight: 300; margin-bottom: 1.5%; color: #fff; margin-bottom: 3%; margin-left: 10%;}
+
+/* swiper */
+.awards .inner .swiper-container {width:100%;height: 100vh; position: relative;}
+.awards .inner .swiper-container .swiper-pagination{position: absolute; bottom: 17%; left: 0%; transform: translate(2%,50%);} /* bar */
+
+.awards .inner .swiper-container .swiper-wrapper {width: 100%;}
+.awards .inner .swiper-container .swiper-wrapper .swiper-slide{width: 100%; background-color: red; position: relative;}
+.awards .inner .swiper-container .swiper-wrapper .swiper-slide p.img{width: 100%; height: 100%;}
+.awards .inner .swiper-container .swiper-wrapper .swiper-slide p.img img {display: block; width: 100%; height: 100%; object-fit: cover; object-position: center;}
+
+.awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox{position: absolute; bottom: 23%; left: 19%; color: #fff;}
+.awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox .tit{font-size: 2.3rem; line-height: 160%; font-weight: 400;}
+.awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox .txt{margin-top: 20px; line-height: 160%;}
+
+
+
+
+.awards .inner .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {margin :0; margin-right: 0px;}
+
+
+/* //////////////////////////////////////////////////// */
+.awards .swiper-pagination-bullet {position: relative; width: 200px; height: auto; text-align: left; border-radius: 0; opacity: 1; margin-right: 20px; background-color: transparent;}
+
+.awards .swiper-pagination-bullet x{font-size: 13px; font-weight: normal; letter-spacing: -0.38px; color: #fff; position: absolute; top: 15px; left: 0; width: 80%; line-height: 1.5;}
+
+.awards .swiper-pagination-bullet y {position: absolute; bottom: 0; left: 0; z-index: 1; width: 100%; height: 1px; background-color: rgba(255, 255, 255, 0.3); /* progress bar 배경 */}
+
+.awards .swiper-pagination-bullet z {position: absolute; bottom: 0; left:  0; z-index: 2; width: 0%; height: 1px; background-color: #fff; /* progress bar 채워지는 부분 */}
+/* //////////////////////////////////////////////////// */
+
+.awards .swiper-pagination-bullet-active {background-color: transparent;}
+
+.awards .swiper-pagination-bullet-active z {animation-name: countingBar;animation-duration: 3s; /* autopaly 시간과 맞춰주기 */animation-timing-function: ease-in;animation-iteration-count: 1;animation-direction: alternate ;animation-fill-mode:forwards;
+}
+@keyframes countingBar {
+    0% {width: 0;}
+    100% {width:100%;}
+}
+
+
+
+
+
+
+
+
+/* space */
+
+.space{background-color: #111; width: 100%; overflow: hidden; padding-bottom: 12%;}
+.space .inner{width: 100%;}
+.space .inner ul{display: flex; justify-content: space-around;}
+.space .inner ul li:nth-child(1){background:  url(../img/space_1.jpg) no-repeat; background-position: center; background-size: cover; width: 50%;  height: 520px;margin-right: 2%; position: relative;}
+.space .inner ul li:nth-child(1)::before{content: '';position: absolute; left: 0; top: 0;background-color: rgba(0,0,0,0.3); width: 100%; height: 100%;}
+
+.space .inner ul li:nth-child(2){background: url(../img/space_2.jpg) no-repeat; background-position: center; background-size: cover; width:50%; height: 520px; position: relative;}
+.space .inner ul li:nth-child(2)::before{content: '';position: absolute; left: 0; top: 0;background-color: rgba(0,0,0,0.3); width: 100%; height: 100%;}
+
+
+.space .inner ul li .txtBox{padding: 5% 10% 20% 5%; overflow: hidden; box-sizing: border-box; color: #fff; position: relative;}
+.space .inner ul li .txtBox p.tit{font-size: 2.6rem; font-weight: 300; margin-bottom: 3%;}
+.space .inner ul li .txtBox p.txt{line-height: 1.8; margin-bottom: 3%; font-weight: 500;}
+.space .inner ul li .txtBox a{display: block; width: 100%; height: 100%;}
+
+.space .inner ul li .txtBox a .button{display: inline-block; position: relative;}
+.space .inner ul li .txtBox a .button::after{content: ''; position: absolute; bottom: 0; left: 0; width: 0%; height: 1px; background-color: #fff; transition: all 0.4s;}
+
+.space .inner ul li .txtBox a span.icon{font-size: 0.8rem; font-weight: 600; line-height: 0.8; transition: all 0.4s;}
+
+/* hover */
+.space .inner ul li .txtBox a:hover .button::after,
+.space .inner ul li .txtBox a:focus .button::after{width: 100%; transition: all 0.4s;}
+
+.space .inner ul li .txtBox a:hover span.icon,
+.space .inner ul li .txtBox a:focus span.icon{margin-left: 5px; transition: all 0.4s;}
+
+
+
+
+
+
+
+
+
+
+
+
+/* event */
+.event{background-color: #111; width: 100%; overflow: hidden; padding-bottom: 13%;}
+.event .inner{width: 100vw; height: 50vw; max-height: 1080px; background: url(../img/event_1.jpg)no-repeat; background-position: center; background-size: cover; display: block;}
+.event .inner .txtBox{width: 100%; padding: 17% 10% 15% 6%; color: #fff;}
+.event .inner .txtBox .tit{font-size: 54px; line-height: 2.5;}
+.event .inner .txtBox .txt{font-size: 26px; font-weight: 100; line-height: 4;}
+.event .inner .txtBox .button{width: 240px; height: 56px; border: 0.5px solid #fff; margin-top: 0.5%; position: relative;}
+.event .inner .txtBox .button a{display: block; width: 100%; height: 100%;}
+.event .inner .txtBox .button a::after{content: ''; width: 0%; height: 100%; background-color: #fff; top: 0; left: 0; position: absolute; transition: all 0.4s;}
+.event .inner .txtBox .button a:hover::after, 
+.event .inner .txtBox .button a:focus::after{width: 100%; transition: all 0.4s;}
+
+.event .inner .txtBox .button a p{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); transition: all 0.4s; z-index: 10;}
+.event .inner .txtBox .button a:hover p,
+.event .inner .txtBox .button a:focus p{color: #000; transition: all 0.4s;}
+
+/* animation */
+@keyframes fadeScale {
+    0%{transform: scale(1.2); opacity: 0;}
+    20%{transform: scale(1.2); opacity: 1;}
+    100%{transform: scale(1); opacity: 1;}
+}
+.event .inner.motion{animation-name: fadeScale; animation-duration: 1.5s;}
+
+@keyframes fadeInUp{
+    0%{opacity: 0; transform: translateY(100px);}
+    30%{opacity: 0; transform: translateY(100px);}
+    100%{opacity: 1; transform: translateY(0px);}
+}
+
+.event .inner .txtBox .tit.motion{animation-name: fadeInUp; animation-duration: 1.2s;}
+.event .inner .txtBox .txt.motion{animation-name: fadeInUp; animation-duration: 1.4s;}
+.event .inner .txtBox .button.motion{animation-name: fadeInUp; animation-duration: 1.6s;}
+
+
+
+
+
+
+/* instagram */
+.instagram{width: 100%; overflow: hidden; padding: 10% 0 10%;}
+.instagram .inner{width: 100%;}
+.instagram .inner .topBox{width: 100%; text-align: center; padding-bottom: 5%;}
+.instagram .inner .topBox .txt{font-size: 18px; line-height: 2.5;}
+.instagram .inner .topBox .tit{font-size: 54px; font-weight: 100;}
+
+.instagram .inner .imgBox{width: 100%;  overflow: hidden;}
+.instagram .inner .imgBox ul{width: 100%; display: flex; justify-content: space-between; margin-bottom: 3%;}
+.instagram .inner .imgBox ul li{width: 33%; overflow: hidden; background-color: #000;}
+.instagram .inner .imgBox ul li a{display: block; width: 100%; height: 100%;}
+.instagram .inner .imgBox ul li a .listInnerBox{position: relative;width: 100%;}
+.instagram .inner .imgBox ul li a .listInnerBox img{object-fit: cover; width: 100%; transition: all 0.3s;}
+
+.instagram .inner .imgBox ul li a .listInnerBox .txtBox{position: absolute; bottom: 0; left: 0; color: #fff; padding: 0% 2% 5% 15%; opacity: 0;}
+.instagram .inner .imgBox ul li a .listInnerBox .txtBox::after{content: ''; position: absolute; top: -4%; left: 4.5%; background: url(../img/instagram_icon_1.png)no-repeat; width: 100%; height: 100%;}
+
+.instagram .inner .imgBox ul li a .listInnerBox .txtBox .txt_1{font-size: 13px; line-height: 1.5; margin-bottom: 3%; letter-spacing: 2; font-weight: 400;}
+.instagram .inner .imgBox ul li a .listInnerBox .txtBox .txt_2{font-size: 16px; display: inline-block;}
+.instagram .inner .imgBox ul li a .listInnerBox .txtBox .txt_2 .button{display: inline-block; border-bottom: 1px solid #fff; padding-bottom: 1%; font-weight: 400;}
+
+.instagram .inner .imgBox ul li a .listInnerBox .txtBox .txt_2 span{font-size: 15px;display: inline-block;}
+.instagram .inner .imgBox ul li a .listInnerBox .txtBox .txt_2 span img{width: 8%;  object-fit: cover;}
+/* hover */
+.instagram .inner .imgBox ul li a:hover .listInnerBox img,
+.instagram .inner .imgBox ul li a:hover .listInnerBox img{transition: all 0.3s; scale: 1.2; opacity: 0.5;}
+.instagram .inner .imgBox ul li a:hover .listInnerBox .txtBox,
+.instagram .inner .imgBox ul li a:hover .listInnerBox .txtBox{opacity: 1;}
+
+.instagram .inner .bottomBox{width: 100%; overflow: hidden;padding: 1% 0;}
+.instagram .inner .bottomBox .inner{width: 90%; margin: 0 auto;}
+.instagram .inner .bottomBox .inner .button{width: 13%; height: 56px;margin: 0 auto; border: 0.6px solid #000; overflow: hidden; position: relative;}
+
+.instagram .inner .bottomBox .inner .button a{display: block; width: 100%; height: 100%;}
+.instagram .inner .bottomBox .inner .button a::before{content: ''; position: absolute; top: 0; left: 0; width: 0%; height: 100%; background-color: #000; transition: all 0.4s;}
+
+
+.instagram .inner .bottomBox .inner .button a .txt{display: inline-block; line-height: 4; padding-left: 23px; font-weight: 400; transition: all 0.4s;}
+.instagram .inner .bottomBox .inner .button a i{line-height: 3.6; float: right; padding-right: 15px; transition: all 0.4s;}
+
+.instagram .inner .bottomBox .inner .button a:hover::before,
+.instagram .inner .bottomBox .inner .button a:focus::before{content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; transition: all 0.3s; z-index: -10;}
+
+.instagram .inner .bottomBox .inner .button a:hover .txt,
+.instagram .inner .bottomBox .inner .button a:focus .txt{color: #fff;  transition: all 0.3s;}
+
+.instagram .inner .bottomBox .inner .button a:hover i,
+.instagram .inner .bottomBox .inner .button a:focus i{color: #fff; transition: all 0.3s;}
+
+
+
+
+
+
+
+/* contents */
+.contents{width: 100%; overflow: hidden; margin-bottom: 5%;}
+.contents .inner{width: 88%; overflow: hidden; margin: 0 auto;}
+.contents .inner .topBox{text-align: center; margin-bottom: 3%;}
+.contents .inner .topBox .tit{font-size: 30px; font-weight: 500;}
+
+.contents .inner .bottomBox{width: 100%}
+.contents .inner .bottomBox ul{width: 100%; display: flex; justify-content: space-between;}
+.contents .inner .bottomBox ul li{width: 32%; border: 1px solid #fff; }
+.contents .inner .bottomBox ul li img{width: 100%; margin-bottom: 23px;}
+
+.contents .inner .bottomBox ul li .txtBox{width: 100%;}
+.contents .inner .bottomBox ul li .txtBox .txt_1{font-size: 18px; font-weight: 600; margin-bottom: 8px;}
+.contents .inner .bottomBox ul li .txtBox .txt_2{font-weight: 400; margin-bottom: 18px;}
+.contents .inner .bottomBox ul li .txtBox a .txt_3{font-weight: 500; display: inline-block; position: relative;}
+.contents .inner .bottomBox ul li .txtBox a .txt_3::after{content: ''; width: 0%; height: 1px; left: 0; bottom: 0; background-color: #000; position: absolute; transition: all 0.4s;}
+.contents .inner .bottomBox ul li .txtBox a span{font-size: 13px; font-weight: 600; transition: all 0.4s;}
+
+.contents .inner .bottomBox ul li .txtBox a:hover .txt_3::after,
+.contents .inner .bottomBox ul li .txtBox a:focus .txt_3::after{width: 100%; transition: all 0.4s;}
+
+.contents .inner .bottomBox ul li .txtBox a:hover span,
+.contents .inner .bottomBox ul li .txtBox a:focus span{margin-left: 5px; transition: all 0.4s;}
+
+
+/* animation */
+@keyframes fadeInUp{
+    0%{opacity: 0; transform: translateY(100px);}
+    30%{opacity: 0; transform: translateY(100px);}
+    100%{opacity: 1; transform: translateY(0px);}
+}
+.contents .inner .topBox .tit.motion{animation-name: fadeInUp; animation-duration: 0.8s;}
+.contents .inner .bottomBox ul li.motion{animation-name: fadeInUp; animation-duration: 0.8s;}
+.contents .inner .bottomBox ul li:nth-child(2).motion{animation-name: fadeInUp; animation-duration: 1.0s;}
+.contents .inner .bottomBox ul li:nth-child(3).motion{animation-name: fadeInUp; animation-duration: 1.2s;}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{width: 100%; overflow: hidden; background-color: #111;}
+footer .inner{width: 100%;}
+
+footer .inner .box_1{width: 100%; border-bottom: 1px solid #222;}
+footer .inner .box_1 .innerBox{width: 88%; display: flex; justify-content: space-between; margin: 0 auto;}
+footer .inner .box_1 .innerBox .leftBox{width: 50%;}
+footer .inner .box_1 .innerBox .leftBox ul{display: flex; padding: 3% 0;}
+footer .inner .box_1 .innerBox .leftBox ul li{margin-right: 4%; color: #ccc; font-size: 20px;}
+footer .inner .box_1 .innerBox .leftBox ul li:hover,
+footer .inner .box_1 .innerBox .leftBox ul li:focus{color: #fff;}
+footer .inner .box_1 .innerBox .leftBox ul li:first-child{color: #fff; font-weight: 400; font-size: 16px;}
+footer .inner .box_1 .innerBox .rightBox{width: 50%;}
+footer .inner .box_1 .innerBox .rightBox .goTop{display: block; float: right; width: 30%; margin: 2% 0; overflow: hidden;}
+footer .inner .box_1 .innerBox .rightBox .goTop p{color: #fff; display: inline-block; width: 100%; text-align: right; font-weight: 400;}
+footer .inner .box_1 .innerBox .rightBox .goTop p span{display: inline-block; font-size: 12px; margin-top: 5%; font-weight: 900; color: #fff; margin-left: 1%;}
+
+
+footer .inner .box_3{width: 100%; overflow: hidden; border-bottom: 1px solid #222;}
+footer .inner .box_3 .innerBox{width: 88%; margin: 0 auto;}
+
+footer .inner .box_3 .innerBox .topBox{margin-top: 3%; display: flex;justify-content: flex-start; box-sizing: border-box; margin-bottom: 2%;}
+footer .inner .box_3 .innerBox .topBox .box_3_1{box-sizing: border-box; margin-right: 15%; width: 35%;}
+footer .inner .box_3 .innerBox .topBox .box_3_1 strong{font-size: 16px; color: #fff; margin-bottom: 20%; display: block;}
+footer .inner .box_3 .innerBox .topBox .box_3_1 ul{box-sizing: border-box; width: 100%;}
+footer .inner .box_3 .innerBox .topBox .box_3_1 ul li{margin: 12% 0; font-size: 14px; color: #bbb; transition: all 0.3s; font-weight: 400; width: 100%;}
+footer .inner .box_3 .innerBox .topBox .box_3_1 ul li:hover,
+footer .inner .box_3 .innerBox .topBox .box_3_1 ul li:focus{color: #fff; transition: all 0.3s;}
+footer .inner .box_3 .innerBox .topBox .box_3_1 ul li a{display: block; width: 100%; height: 100%;}
+
+footer .inner .box_3 .innerBox .bottomBox{margin-top: 4%; display: flex;justify-content: flex-start; box-sizing: border-box; margin-bottom: 2%;}
+footer .inner .box_3 .innerBox .bottomBox .box_3_1{box-sizing: border-box; margin-right: 15%; width: 10%;}
+footer .inner .box_3 .innerBox .bottomBox .box_3_1 strong{font-size: 16px; color: #fff; margin-bottom: 20%; display: block;}
+footer .inner .box_3 .innerBox .bottomBox .box_3_1 ul{box-sizing: border-box; width: 100%;}
+footer .inner .box_3 .innerBox .bottomBox .box_3_1 ul li{margin: 12% 0; font-size: 14px; color: #bbb; transition: all 0.3s; font-weight: 400;}
+footer .inner .box_3 .innerBox .bottomBox .box_3_1 ul li:hover,
+footer .inner .box_3 .innerBox .bottomBox .box_3_1 ul li:focus{color: #fff; transition: all 0.3s;}
+footer .inner .box_3 .innerBox .bottomBox .box_3_1 ul li a{display: block; width: 100%; height: 100%;}
+
+
+footer .inner .box_4{width: 100%; overflow: hidden; border-bottom: 1px solid #222;}
+footer .inner .box_4 .innerBox{width: 88%; display: flex; justify-content: space-between; margin: 0 auto; padding: 1.5% 0;}
+
+footer .inner .box_4 .innerBox .leftBox{width: 70%; display: flex; justify-content: flex-start;}
+footer .inner .box_4 .innerBox .leftBox li{font-size: 14px; margin-right: 3%; position: relative; color: #bbb; margin-top: 1.1%; transition: all 0.3s;}
+footer .inner .box_4 .innerBox .leftBox li:hover,
+footer .inner .box_4 .innerBox .leftBox li:focus{color: #fff; transition: all 0.3s;}
+footer .inner .box_4 .innerBox .leftBox li:nth-child(3){color: #c36f51;}
+footer .inner .box_4 .innerBox .leftBox li::after{content: '|'; position: absolute; top: 0; right: -20px; line-height: 1.5; color: #bbb; opacity: 0.2;}
+footer .inner .box_4 .innerBox .leftBox li a{display: block; width: 100%; height: 100%;}
+
+footer .inner .box_4 .innerBox .rightBox{width: 20%; display: flex; justify-content: flex-end;}
+footer .inner .box_4 .innerBox .rightBox li{font-size: 25px; color: #fff; padding: 1% 3%; margin-top: 2%; margin-left: 3%;}
+
+
+footer .inner .box_5{width: 100%; overflow: hidden; border-bottom: 1px solid #222;}
+footer .inner .box_5 .innerBox{width: 88%; display: flex; justify-content: space-between; margin: 0 auto; padding: 1.5% 0;}
+
+footer .inner .box_5 .innerBox .leftBox{width: 75%; display: flex; justify-content: flex-start;}
+footer .inner .box_5 .innerBox .leftBox ul{width: 100%; display: flex; justify-content: space-between; flex-wrap: wrap;}
+footer .inner .box_5 .innerBox .leftBox ul li{color: #bbb; font-size: 14px; position: relative; margin-top: 0.8%;}
+footer .inner .box_5 .innerBox .leftBox ul li:hover,
+footer .inner .box_5 .innerBox .leftBox ul li:focus{color: #fff;}
+footer .inner .box_5 .innerBox .leftBox ul li:hover a span img,
+footer .inner .box_5 .innerBox .leftBox ul li:focus a span img{opacity: 1;}
+footer .inner .box_5 .innerBox .leftBox ul li a{display: block; width: 100%; height: 100%; padding: 3% 0;}
+footer .inner .box_5 .innerBox .leftBox ul li a span img{transform: scale(0.5); opacity: 0.5;}
+footer .inner .box_5 .innerBox .leftBox ul li a p{display: inline-block;}
+
+
+footer .inner .box_5 .innerBox .rightBox{width: 25%; display: flex; justify-content: flex-end; margin-top: 0.5%;}
+footer .inner .box_5 .innerBox .rightBox .btn_1{width: 23%; height: 70%; background-color: #fff;}
+footer .inner .box_5 .innerBox .rightBox .btn_1 a{width: 100%; display: block; height: 100%; position: relative;}
+footer .inner .box_5 .innerBox .rightBox .btn_1 a::before{content: 'ENG'; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+
+footer .inner .box_5 .innerBox .rightBox .btn_2{width: 23%; height: 70%; background-color: #222;}
+footer .inner .box_5 .innerBox .rightBox .btn_2 a{width: 100%; display: block; height: 100%; position: relative;}
+footer .inner .box_5 .innerBox .rightBox .btn_2 a::before{content: 'KOR'; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: #fff;}
+
+
+footer .inner .box_6{width: 100%; overflow: hidden; border-bottom: 1px solid #222; padding: 2% 0;}
+footer .inner .box_6 .inner{width: 88%; overflow: hidden; margin: 0 auto; position: relative;}
+footer .inner .box_6 .inner p.img{text-align: center; margin-bottom: 1%; transform: scale(0.7);}
+footer .inner .box_6 .inner .txt{text-align: center; margin-bottom: 1%; font-size: 14px; color: #ccc; font-weight: 400;}
+footer .inner .box_6 .inner p.img_2 a{position: absolute; top: 0; right: 0;}
+
+
+
+
+
+
+
+
+/* media */
+/* 1024 ~ 1359px */
+@media screen and (max-width:1359px) {
+    
+    /* header */
+    header .innerHeader .logo{margin-right: -22px;}
+    header .innerHeader .logo a img{scale: 0.55;}
+    header .innerHeader nav .nav_1{width: 20rem;}
+    header .innerHeader nav .nav_1 ul li{font-size: 14px;}
+    
+    header .innerHeader nav .nav_2{width: 7.5rem;}
+    header .innerHeader nav .nav_2 ul li:nth-child(1){display: none;}
+    header .innerHeader nav .nav_2 ul li:nth-child(2){display: none;}
+    header .innerHeader nav .nav_2 ul li:nth-child(4){margin: -5% 0;}
+    
+    
+    
+    
+    /* visual */
+    .visual .inner .swiper-slide img{height: 750px;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1{top: 18%;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1 .txt_1 {font-size: 18px;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1 h2{font-size: 48px;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1 .txt_2{font-size: 18px;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2 li a .txt_1{font-size: 12px;}
+    .visual .inner .mySwiper_visual .swiper-pagination{bottom: 8%;}
+    .visual .inner .mySwiper_visual .swiper-pagination .swiper-pagination-bullet{scale: 0.8;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .line_1{bottom: 45%;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .line_2{bottom: 35%;}
+    
+
+    /* models */
+    .models .inner .topBox h2{font-size: 26px;}
+    .models .inner .topBox p{font-size: 12px;}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide{padding: 20px 30px 20px;}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox p{font-size: 18px;}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox span{font-size: 13px;}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox p img.new{transform: scale(0.5) translate(45%,-55%);}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .buttonBox .button p{font-size: 13px;}
+
+
+    /* gif */
+    .gif .inner ul{width: 55%;}
+    .gif .inner ul li a p{font-size: 14px;}
+    .gif .inner ul li a img{transform: scale(0.8);}
+
+
+    /* award */
+    .awards{padding-top: 15%;}
+    .awards .inner .topBox h2{font-size: 26px;}
+    .awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox{left: 16%;}
+    .awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox .tit{font-size: 21px;}
+    .awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox .txt{font-size: 12px;}
+    .awards .inner .swiper-container .swiper-pagination{bottom: 40%;}
+    .awards .swiper-pagination-bullet{width: 130px;}
+    .awards .swiper-pagination-bullet x{font-size: 12px; font-weight: 400;}
+    
+
+
+    /* space */
+    .space .inner ul li .txtBox p.tit{font-size: 20px;}
+    .space .inner ul li .txtBox p.txt{font-size: 12px;}
+    .space .inner ul li .txtBox a .button{font-size: 12px;}
+    .space .inner ul li:nth-child(1){height: 316px;}
+    .space .inner ul li:nth-child(2){height: 316px;}
+
+    
+    /* event */
+    .event .inner{height: 580px;}
+    .event .inner .txtBox .tit.motion{font-size: 26px;}
+    .event .inner .txtBox .txt.motion{font-size: 16px;}
+    .event .inner .txtBox .button a p{font-size: 13px;}
+    .event .inner .txtBox .button.motion{width: 190px; height: 50px;}
+    
+
+    /* instagram */
+    .instagram .inner .topBox .txt{font-size: 12px;}
+    .instagram .inner .topBox .tit{font-size: 26px;}
+    .instagram .inner .imgBox ul li a .listInnerBox .txtBox .txt_1{font-size: 12px;}
+    .instagram .inner .imgBox ul li a .listInnerBox .txtBox .txt_2 .button{font-size: 10px;}
+    .instagram .inner .imgBox ul li a .listInnerBox .txtBox::after{content: ''; position: absolute; top: -15%; left: -10.5%; background: url(../img/instagram_icon_1.png)no-repeat; width: 100%; height: 100%; transform: scale(0.7);}
+    .instagram .inner .bottomBox .inner .button{width: 20%;}
+    .instagram .inner .bottomBox .inner .button a .txt{line-height: 4.8; font-size: 13px;}
+
+
+    /* contents */
+    .contents .inner .topBox .tit.motion{font-size: 28px;}
+    .contents .inner .bottomBox ul li .txtBox .txt_1{font-size: 16px; font-weight: 500;}
+    .contents .inner .bottomBox ul li .txtBox .txt_2{font-size: 14px;}
+    .contents .inner .bottomBox ul li .txtBox a .txt_3{font-size: 14px;}
+
+    /* footer */
+    footer .inner .box_1 .innerBox .leftBox ul li:first-child{font-size: 14px; margin-top: 1%;}
+    footer .inner .box_1 .innerBox .leftBox ul li:nth-child(2),
+    footer .inner .box_1 .innerBox .leftBox ul li:nth-child(3),
+    footer .inner .box_1 .innerBox .leftBox ul li:nth-child(4){transform: scale(0.9);margin-top: 0.5%;}
+    footer .inner .box_1 .innerBox .rightBox .goTop p{font-size: 14px; margin-top: 1%;}
+    footer .inner .box_3 .innerBox .topBox .box_3_1 strong{font-size: 14px;}
+    footer .inner .box_3 .innerBox .topBox .box_3_1 ul li a{font-size: 12px;}
+
+    footer .inner .box_3 .innerBox .bottomBox .box_3_1 strong{font-size: 14px;}
+    footer .inner .box_3 .innerBox .bottomBox .box_3_1 ul li a{font-size: 12px;}
+    footer .inner .box_4 .innerBox .leftBox li a{font-size: 12px;}
+    footer .inner .box_4 .innerBox .leftBox{width: 100%;}
+
+    footer .inner .box_5 .innerBox .leftBox ul li{margin-right: 1.5%;}
+    footer .inner .box_5 .innerBox .leftBox ul li a p{font-size: 12px;}
+    footer .inner .box_5 .innerBox .leftBox ul{justify-content: flex-start}
+
+    footer .inner .box_5 .innerBox .rightBox .btn_1 a::before{font-size: 14px; font-weight: 500;}
+    footer .inner .box_5 .innerBox .rightBox .btn_2 a::before{font-size: 14px; font-weight: 500;}
+    footer .inner .box_6 .inner .txt{font-weight: 400; padding-bottom: 3%;}
+    footer .inner .box_6 .inner p.img{scale: 0.7;}
+
+}
+
+
+
+
+/* media */
+/* 768 ~ 1023px */
+@media screen and (max-width:1023px) {
+    
+    /* header */
+    header{height: 60px;}
+    header .innerHeader{width: 100%;}
+    header .innerHeader .logo{padding: 1.8% 0; transform: translateX(-30px);}
+    header .innerHeader .logo a img{scale: 0.5;}
+    header .innerHeader nav .nav_1 ul{display: none;}
+    header .innerHeader nav .nav_2 ul{padding: 19% 0;}
+
+
+
+    /* visual */
+
+    .visual .inner .swiper-slide img{height: 550px;}
+
+    
+
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1{left: -100px; top: 14%;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1 h2{font-size: 45px; width: 100%;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2 li{width: 15%;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2 li:first-child{margin-left: 5%;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2 li a{padding-bottom: 0;}
+
+    .visual .inner .mySwiper_visual .swiper-wrapper .line_1{display: none;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .line_2{display: none;}
+
+
+    /* models */
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide{padding: 10px 15px 10px;}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox p img.new{transform: scale(0.5) translate(45%,-165%);}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide{height: 220px;}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .buttonBox{padding: 10% 0%;}
+    .models .inner .mySwiper_models .swiper-pagination{bottom: -5%;}
+    .models .inner .mySwiper_models .swiper-pagination .swiper-pagination-bullet{scale: 0.8;}
+
+    /* gif */
+    .gif .inner ul li{margin: 0 5%;}
+    
+
+    /* awards */
+    
+    .awards .inner .swiper-container{height: 70vh;}
+
+    .awards .swiper-pagination-bullet{width: 110px;}
+
+
+
+    /* space */
+    .space .inner ul li:nth-child(1){height: 500px;}
+    .space .inner ul li:nth-child(2){height: 500px;}
+
+    .space .inner ul li .txtBox{padding: 30px 42px 20px 30px;}
+
+
+    /* event */
+    .event .inner{height: 400px;}
+    .event .inner .txtBox{padding: 100px 10px 20px 50px;}
+
+    /* instagram */
+    .instagram .inner .imgBox ul{flex-wrap: wrap;}
+    .instagram .inner .imgBox ul li:nth-child(1){width: 100%; margin-bottom: 2%;}
+    .instagram .inner .imgBox ul li a .listInnerBox img{object-position: center;}
+    .instagram .inner .imgBox ul li:nth-child(2){width: 49%;}
+    .instagram .inner .imgBox ul li:nth-child(3){width: 49%;}
+
+    .instagram .inner .imgBox{height: 50%;}
+
+    .instagram .inner .bottomBox .inner .button{width: 25%;}
+
+
+
+    /* footer */
+    
+    footer .inner .box_4 .innerBox{flex-direction: column; align-items: center; width: 40%; padding: 5% 0;}
+    footer .inner .box_4 .innerBox .leftBox{flex-wrap: wrap; margin-bottom: 10%; justify-content: center;}
+    footer .inner .box_4 .innerBox .leftBox li{margin-bottom: 5%; margin-right: 10%;}
+    footer .inner .box_4 .innerBox .leftBox li a{font-size: 11px;}
+    footer .inner .box_4 .innerBox .rightBox li:nth-child(2){margin: 0 50%;}
+
+    
+    footer .inner .box_5 .innerBox{flex-direction: column; width: 95%;}
+    footer .inner .box_5 .innerBox .leftBox{width: 100%;}
+    footer .inner .box_5 .innerBox .leftBox ul{width: 100%;}
+    footer .inner .box_5 .innerBox .leftBox ul li{width: 100%; border-bottom: 1px solid #222;}
+    footer .inner .box_5 .innerBox .leftBox ul li a{padding: 2% 0 2% 0;}
+
+    /* footer .inner .box_5 .innerBox .rightBox{padding: 10% 0;} */
+    footer .inner .box_5 .innerBox .rightBox{width: 100%; height: 100px; flex-wrap: wrap; align-items: center; justify-content: center;}
+    footer .inner .box_5 .innerBox .rightBox .btn_1{height: 50px; width: 40%;}
+    footer .inner .box_5 .innerBox .rightBox .btn_2{height: 50px; width: 40%;}
+
+    footer .inner .box_6 .inner p.img_2 a{display: none;}
+    
+}
+
+
+/* media */
+/* 0 ~ 767px   w450px*/ 
+@media screen and (max-width:767px) {
+
+    /* header */
+    header .innerHeader .logo{padding: 2.8%;}
+    header .innerHeader nav .nav_2 ul li:nth-child(3){display: none;}
+    header .innerHeader nav .nav_2 ul li:nth-child(4){display: none;}
+
+    /* visual */
+    .visual{padding-bottom: 20%; background-color: #111;}
+    .visual .inner .swiper-slide img{display: none;}
+    .visual .inner .swiper-slide.visual_1{
+        background: url(../img/visual_1_1.jpg)no-repeat; height: 100vh; background-size: cover; background-position: center;
+    }
+    .visual .inner .swiper-slide.visual_2{
+        background: url(../img/visual_1_2.jpg)no-repeat; height: 100vh; background-size: cover; background-position: center;
+    }
+    .visual .inner .swiper-slide.visual_3{
+        background: url(../img/visual_1_3.jpg)no-repeat; height: 100vh; background-size: cover; background-position: center;
+    }
+    .visual .inner .swiper-slide.visual_4{
+        background: url(../img/visual_1_4.jpg)no-repeat; height: 100vh; background-size: cover; background-position: center;
+    }
+    .visual .inner .swiper-slide.visual_5{
+        background: url(../img/visual_1_5.jpg)no-repeat; height: 100vh; background-size: cover; background-position: center;
+    }
+    .visual .inner .swiper-slide.visual_6{
+        background: url(../img/visual_1_6.jpg)no-repeat; height: 100vh; background-size: cover; background-position: center;
+    }
+    .visual .inner .swiper-slide.visual_7{
+        background: url(../img/visual_1_7.jpg)no-repeat; height: 100vh; background-size: cover; background-position: center;
+    }
+    
+    
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1{left: -50px; top: 100px;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1 .txt_1{font-size: 16px;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1 .txt_2{font-size: 16px;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_1 h2{font-size: 42px;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2{bottom: 25%; left: 10px;}
+    .visual .inner .mySwiper_visual .swiper-wrapper .txtBox_2 li{width: 20%;}
+
+    .visual .inner .mySwiper_visual .swiper-pagination .swiper-pagination-bullet{margin: 0% 1.2%;}
+
+
+    /* models */
+    .models .inner .topBox{margin-left: 0;}
+    .models .inner .topBox h2{font-size: 30px;}
+    .models .inner .topBox p{font-size: 16px;}
+    .models .inner .midBox{margin-left: 0;}
+    .models .inner .mySwiper_models{margin-left: 0;}
+    .models .inner .mySwiper_models .swiper-wrapper{height: 100%;}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide{height: 450px;}
+
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox{margin-bottom: 0;}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox p{font-size: 25px;}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox span{font-size: 14px;}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .txtBox p img.new{transform: scale(0.8) translate(0%,-40%);}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .imgBox{margin-bottom: 0; width: 100%;}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .buttonBox{margin-top: 9%; padding: 7% 0%;}
+    .models .inner .mySwiper_models .swiper-wrapper .swiper-slide a .imgBox img{margin-top: 10%;}
+
+
+    /* gif */
+    .gif .inner{width: 90%;}
+    .gif .inner ul{flex-direction: column; width: 100%; text-align: start;}
+    .gif .inner ul li{margin: 0; border-bottom: 1px solid #222;}
+    .gif .inner ul li a{padding: 10px 10px;}
+    .gif .inner ul li a img{transform: scale(0.6) translateY(15px);}
+    .gif .inner ul li a p{display: inline-block; width: 80%; font-size: 16px;}
+
+
+
+
+    /* awards */
+    .awards .inner{padding-bottom: 50px;}
+    .awards .inner .topBox{width: 85%;}
+    .awards .inner .topBox h2{font-size: 30px; margin-bottom: 6%; margin-left: 0;}
+
+    .awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox{
+        left: 0; bottom: 0; transform: translate(10%, 145%);}
+
+    .awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox.mq0_1::after{
+        content: '2022 RED DOT AWARDS'; position: absolute; left: 0; top: -20%; width: 100%; height: 100%; font-size: 14px; letter-spacing: 0.9;
+    }
+    .awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox.mq0_2::after{
+        content: 'J.D.POWER 2022 U.S. INITIAL QUALITY STUDY'; position: absolute; left: 0; top: -20%; width: 100%; height: 100%; font-size: 14px; letter-spacing: 0.9;
+    }
+    .awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox.mq0_3::after{
+        content: '2022 IIHS TOP SAFETY PICK+'; position: absolute; left: 0; top: -20%; width: 100%; height: 100%;font-size: 14px; letter-spacing: 0.9;
+    }
+    .awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox.mq0_4::after{
+        content: '2022 MOTORTREND SUV OF THE YEAR® '; position: absolute; left: 0; top: -20%; width: 100%; height: 100%; font-size: 14px; letter-spacing: 0.9;
+    }
+    .awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox.mq0_5::after{
+        content: 'KAJA/AWAK 2021 CAR OF THE YEAR'; position: absolute; left: 0; top: -20%; width: 100%; height: 100%; font-size: 14px; letter-spacing: 0.9;
+    }
+    .awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox.mq0_6::after{
+        content: '2020 GOOD DESIGN® AWARD'; position: absolute; left: 0; top: -20%; width: 100%; height: 100%; font-size: 14px; letter-spacing: 0.9;
+    }
+
+    .awards .inner .swiper-container .swiper-wrapper .swiper-slide{width: 100%;}
+    .awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox .tit{font-size: 32px;}
+    .awards .inner .swiper-container .swiper-wrapper .swiper-slide .txtBox .txt{margin-top: 10px;}
+    
+
+    .awards .inner .swiper-container .swiper-pagination{bottom: 60%; margin-bottom: 40px;}
+    .awards .swiper-pagination-bullet{width: 50px;}
+    .awards .swiper-pagination-bullet x{display: none;}
+    .awards .swiper-pagination-bullet y {position: absolute; bottom: 0; left: 0; z-index: 1; width: 100%; height: 2px; background-color: rgba(255, 255, 255, 0.3); /* progress bar 배경 */}
+    .awards .swiper-pagination-bullet z {position: absolute; bottom: 0; left:  0; z-index: 2; width: 0%; height: 2px; background-color: #fff; /* progress bar 채워지는 부분 */}
+
+
+
+
+    /* space */
+    .space{padding-bottom: 30%; background-color: #111;}
+    .space .inner ul{flex-direction: column; align-items: center; }
+    .space .inner ul li:nth-child(1){height: 645px; width: 100%; margin-right: 0; margin-bottom: 20px;}
+    .space .inner ul li:nth-child(2){height: 645px; width: 100%;}
+    .space .inner ul li .txtBox p.tit{font-size: 30px;}
+    .space .inner ul li .txtBox p.txt{font-size: 14px;}
+    .space .inner ul li .txtBox a .button{font-size: 14px;}
+    .space .inner ul li .txtBox{padding: 30px 15px 20px 30px; letter-spacing: 0.1px;}
+
+
+    /* event */
+    .event{padding-bottom: 30%;}
+    .event .inner{width: 100vw; height: 760px; max-height: 1080px; background: url(../img/event_mq.jpg)no-repeat; background-position: center; background-size: cover; display: block;}
+    .event .inner .txtBox{padding: 185px 10px 20px 40px; width: 80%;}
+    .event .inner .txtBox .tit.motion{font-size: 36px; margin-bottom: 10%;}
+    .event .inner .txtBox .txt.motion{font-size: 22px; line-height: 1.2; margin-bottom: 10%;}
+    .event .inner .txtBox .button.motion{width: 100%; height: 60px;}
+    .event .inner .txtBox .button a p{font-size: 16px;}
+
+
+    /* instgram */
+    .instagram{margin-top: 10%;}
+    .instagram .inner .topBox .txt{font-size: 18px;}
+    .instagram .inner .topBox .tit{font-size: 36px;}
+
+    
+    .instagram .inner .imgBox ul{flex-direction: column; }
+    .instagram .inner .imgBox ul li{overflow: unset; background-color: #fff;}
+    .instagram .inner .imgBox ul li:nth-child(1){width: 100%; margin-bottom: 30%;}
+    .instagram .inner .imgBox ul li:nth-child(2){width: 100%; margin-bottom: 30%;}
+    .instagram .inner .imgBox ul li:nth-child(3){width: 100%; margin-bottom: 30%;}
+    .instagram .inner .imgBox ul li > a .listInnerBox .txtBox{bottom: -30%; z-index: 100; color: #000; opacity: 1; padding: 8% 8%; background-color: #fff;}
+    .instagram .inner .imgBox ul li a .listInnerBox .txtBox::after{top: -30%; left: 12%; transform: scale(1.1);}
+    .instagram .inner .imgBox ul li a .listInnerBox .txtBox .txt_1{font-size: 14px;}
+    .instagram .inner .imgBox ul li a .listInnerBox .txtBox .txt_2{font-size: 14px;}
+    .instagram .inner .imgBox ul li a:hover .listInnerBox img,
+    .instagram .inner .imgBox ul li a:hover .listInnerBox img{transition: all 0.3s; scale: 1.2; opacity: 1;}
+    .instagram .inner .bottomBox .inner .button{width: 100%;}
+    
+
+
+    /* contents */
+    
+    .contents .inner .bottomBox ul{flex-direction: column; align-items: center; }
+    .contents .inner .bottomBox ul li{width: 100%;}
+    .contents .inner .bottomBox ul li .txtBox .txt_1{font-weight: 500; font-size: 18px;}
+    .contents .inner .bottomBox ul li .txtBox .txt_2{font-size: 16px;}
+    .contents .inner .bottomBox ul li .txtBox a .txt_3{margin-bottom: 10%;}
+
+
+    /* footer */
+    footer .inner .box_1 .innerBox .rightBox .goTop p{margin-top: 7%;}
+
+    footer .inner .box_6 .inner .txt{font-size: 12px;}
+
+    footer .inner .box_4 .innerBox .rightBox{justify-content: center;}
+}

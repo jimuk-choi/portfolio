@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Hyundai Sans Head Office-bold';
+    src: url(../css/font/HyundaiSansHeadOffice-Bold.ttf);
+}
+@font-face {
+    font-family: 'Hyundai Sans Head Office-light';
+    src: url(../css/font/HyundaiSansHeadOffice-Light.ttf);
+}
+@font-face {
+    font-family: 'Hyundai Sans Head Office-medium';
+    src: url(../css/font/HyundaiSansHeadOffice-Medium.ttf);
+}
+@font-face {
+    font-family: 'Hyundai Sans Head Office-bold';
+    src: url(../css/font/HyundaiSansHeadOffice-Bold.ttf);
+}
+@font-face {
+    font-family: 'Hyundai Sans Head Office-regular';
+    src: url(../css/font/HyundaiSansHeadOffice-Regular.ttf);
+}
